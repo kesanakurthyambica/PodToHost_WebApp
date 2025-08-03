@@ -5,3 +5,8 @@ kubectl get pods -o wide -  shows the details of pod with ip address
 kubectl describe pod <nginx>
 kubectl get nodes - lists the nodes
 kubectl port-forward pod/nginx 8080:80
+kubectl port-forward service/nginx-service 8080:80
+kubectl describe service nginx-service
+kubectl get pods --show-labels
+kubectl apply -f nginx-service.yml
+nano nginx-service.yml
