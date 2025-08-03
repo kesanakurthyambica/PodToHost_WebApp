@@ -23,3 +23,4 @@ Add the Label to Your Pod
 
 Create the YAML Manifest for the Service
 
+Apply the YAML Manifest
