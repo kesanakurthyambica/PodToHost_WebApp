@@ -1,0 +1,7 @@
+nano <nginx-pod.yml> - create and open the yml file
+kubectl apply -f <nginx-pod.yml> - build the pod
+kubectl delete pod <nginx> - deletes the pod
+kubectl get pods -o wide -  shows the details of pod with ip address
+kubectl describe pod <nginx>
+kubectl get nodes - lists the nodes
+kubectl port-forward pod/nginx 8080:80
