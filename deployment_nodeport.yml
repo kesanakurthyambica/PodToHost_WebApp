@@ -1,12 +1,12 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-deployment-np
 spec:
   replicas: 3
   selector:
-  matchLabels:
-    app: my-app-np
+    matchLabels:
+      app: my-app-np
   template:
     metadata:
       labels:
@@ -16,8 +16,7 @@ spec:
         - name: my-container
           image: nginx:latest
           ports:
-          - containerPort: 80
-
+            - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -33,4 +32,3 @@ spec:
       protocol: TCP
   selector:
     app: my-app-np
-
