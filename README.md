@@ -24,3 +24,9 @@ Add the Label to Your Pod
 Create the YAML Manifest for the Service
 
 Apply the YAML Manifest
+
+Verify the Service
+
+Test Using CURL
+
+Test Using Web Browser
